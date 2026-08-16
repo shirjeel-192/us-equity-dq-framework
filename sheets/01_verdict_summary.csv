@@ -1,0 +1,2 @@
+snap_a,snap_b,coverage_a,coverage_b,coverage_drop_pct,verdict,reasons
+202602,202608,100,100,0.0,PASS_WITH_WARNINGS,22 WARN-level anomalies (delisting/ticker_change/share_class_remap/value_drift)

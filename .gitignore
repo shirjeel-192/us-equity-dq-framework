@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+.vscode/
+.idea/
+
+# Generated artifacts — reproducible by running src/run.py
+data/*.duckdb
+data/*.wal

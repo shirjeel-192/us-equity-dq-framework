@@ -1,0 +1,9 @@
+category,severity,count
+coverage_drop,FAIL,2
+figi_collision,FAIL,2
+id_mapping_break,FAIL,1
+split_unreconciled,FAIL,1
+delisting,WARN,1
+share_class_remap,WARN,1
+ticker_change,WARN,1
+new_addition,INFO,1

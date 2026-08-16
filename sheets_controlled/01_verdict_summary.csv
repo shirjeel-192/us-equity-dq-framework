@@ -1,0 +1,2 @@
+snap_a,snap_b,coverage_a,coverage_b,coverage_drop_pct,verdict,reasons
+202608,202609,100,100,0.0,FAIL,1 id_mapping_break rows (> 0 threshold) | 2 figi_collision rows | 1 split_unreconciled rows

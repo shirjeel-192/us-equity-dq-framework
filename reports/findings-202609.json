@@ -1,0 +1,126 @@
+{
+  "snap_a": "202608",
+  "snap_b": "202609",
+  "coverage_a": 100,
+  "coverage_b": 100,
+  "coverage_drop_pct": 0.0,
+  "verdict": "FAIL",
+  "verdict_reasons": [
+    "1 id_mapping_break rows (> 0 threshold)",
+    "2 figi_collision rows",
+    "1 split_unreconciled rows"
+  ],
+  "anomaly_counts": {
+    "coverage_drop": 2,
+    "delisting": 1,
+    "figi_collision": 2,
+    "id_mapping_break": 1,
+    "new_addition": 1,
+    "share_class_remap": 1,
+    "split_unreconciled": 1,
+    "ticker_change": 1,
+    "value_drift": 0
+  },
+  "anomalies": [
+    {
+      "category": "coverage_drop",
+      "severity": "FAIL",
+      "cik": 320193,
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "snap_a_value": "29",
+      "snap_b_value": "0",
+      "evidence": "well-covered in A (>=3 rows), silent in B \u2014 likely ticker change or vendor drop"
+    },
+    {
+      "category": "coverage_drop",
+      "severity": "FAIL",
+      "cik": 1318605,
+      "ticker": "TSLA",
+      "name": "Tesla, Inc.",
+      "snap_a_value": "29",
+      "snap_b_value": "ABSENT",
+      "evidence": "well-covered in A (>=3 rows), silent in B \u2014 likely ticker change or vendor drop"
+    },
+    {
+      "category": "delisting",
+      "severity": "WARN",
+      "cik": 1318605,
+      "ticker": "TSLA",
+      "name": "Tesla, Inc.",
+      "snap_a_value": "29",
+      "snap_b_value": "ABSENT",
+      "evidence": "CIK present in A, absent in B. Verify against SEC delisting notices"
+    },
+    {
+      "category": "figi_collision",
+      "severity": "FAIL",
+      "cik": 1018724,
+      "ticker": "AMZN",
+      "name": "AMAZON COM INC",
+      "snap_a_value": "CIK 1018724",
+      "snap_b_value": "BBG000BVPV84",
+      "evidence": "composite_figi collides across 2 CIKs in this snapshot \u2014 bad mapping"
+    },
+    {
+      "category": "figi_collision",
+      "severity": "FAIL",
+      "cik": 1045810,
+      "ticker": "NVDA",
+      "name": "NVIDIA CORP",
+      "snap_a_value": "CIK 1045810",
+      "snap_b_value": "BBG000BVPV84",
+      "evidence": "composite_figi collides across 2 CIKs in this snapshot \u2014 bad mapping"
+    },
+    {
+      "category": "id_mapping_break",
+      "severity": "FAIL",
+      "cik": 789019,
+      "ticker": "MSFT",
+      "name": "MICROSOFT CORP",
+      "snap_a_value": "BBG000BPH459",
+      "snap_b_value": "NULL",
+      "evidence": "composite_figi disappeared for a known-good CIK. Chase vendor bug"
+    },
+    {
+      "category": "new_addition",
+      "severity": "INFO",
+      "cik": 9999999,
+      "ticker": "IPOX",
+      "name": "Fictional New Listing Corp",
+      "snap_a_value": "ABSENT",
+      "snap_b_value": "5",
+      "evidence": "CIK not in A. Expected on new listings \u2014 flag only if unexpected"
+    },
+    {
+      "category": "share_class_remap",
+      "severity": "WARN",
+      "cik": 1652044,
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc.",
+      "snap_a_value": "BBG009S39JY5",
+      "snap_b_value": "BBG_SIMULATED_REMAP_1652044",
+      "evidence": "CIK+composite_figi same, share_class_figi remapped. Confirm vs vendor notice"
+    },
+    {
+      "category": "split_unreconciled",
+      "severity": "FAIL",
+      "cik": 1045810,
+      "ticker": "NVDA",
+      "name": "NVIDIA CORP",
+      "snap_a_value": "225.16000366210938 \u2192 225.16000366210938",
+      "snap_b_value": "4.0:1",
+      "evidence": "split ratio 4.0:1 but observed price ratio 1.0 \u2014 verify split date/ratio"
+    },
+    {
+      "category": "ticker_change",
+      "severity": "WARN",
+      "cik": 1326801,
+      "ticker": "META \u2192 METAX",
+      "name": "Meta Platforms, Inc.",
+      "snap_a_value": "META",
+      "snap_b_value": "METAX",
+      "evidence": "Same CIK, ticker changed. Update entity mapping valid_to/valid_from"
+    }
+  ]
+}

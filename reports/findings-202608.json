@@ -1,0 +1,244 @@
+{
+  "snap_a": "202602",
+  "snap_b": "202608",
+  "coverage_a": 100,
+  "coverage_b": 100,
+  "coverage_drop_pct": 0.0,
+  "verdict": "PASS_WITH_WARNINGS",
+  "verdict_reasons": [
+    "22 WARN-level anomalies (delisting/ticker_change/share_class_remap/value_drift)"
+  ],
+  "anomaly_counts": {
+    "value_drift": 22,
+    "coverage_drop": 0,
+    "new_addition": 0,
+    "delisting": 0,
+    "ticker_change": 0,
+    "share_class_remap": 0,
+    "id_mapping_break": 0,
+    "split_unreconciled": 0,
+    "figi_collision": 0
+  },
+  "anomalies": [
+    {
+      "category": "value_drift",
+      "severity": "WARN",
+      "cik": 2488,
+      "ticker": "AMD",
+      "name": "ADVANCED MICRO DEVICES INC",
+      "snap_a_value": "207.32000732421875",
+      "snap_b_value": "514.3900146484375",
+      "evidence": "price move of 148.11% between snapshots, no split recorded \u2014 investigate"
+    },
+    {
+      "category": "value_drift",
+      "severity": "WARN",
+      "cik": 6951,
+      "ticker": "AMAT",
+      "name": "APPLIED MATERIALS INC /DE",
+      "snap_a_value": "354.9100036621094",
+      "snap_b_value": "507.17999267578125",
+      "evidence": "price move of 42.9% between snapshots, no split recorded \u2014 investigate"
+    },
+    {
+      "category": "value_drift",
+      "severity": "WARN",
+      "cik": 50863,
+      "ticker": "INTC",
+      "name": "INTEL CORP",
+      "snap_a_value": "46.790000915527344",
+      "snap_b_value": "102.5",
+      "evidence": "price move of 119.06% between snapshots, no split recorded \u2014 investigate"
+    },
+    {
+      "category": "value_drift",
+      "severity": "WARN",
+      "cik": 319201,
+      "ticker": "KLAC",
+      "name": "KLA CORP",
+      "snap_a_value": "146.41299438476562",
+      "snap_b_value": "203.72000122070312",
+      "evidence": "price move of 39.14% between snapshots, no split recorded \u2014 investigate"
+    },
+    {
+      "category": "value_drift",
+      "severity": "WARN",
+      "cik": 707549,
+      "ticker": "LRCX",
+      "name": "LAM RESEARCH CORP",
+      "snap_a_value": "235.52999877929688",
+      "snap_b_value": "332.3599853515625",
+      "evidence": "price move of 41.11% between snapshots, no split recorded \u2014 investigate"
+    },
+    {
+      "category": "value_drift",
+      "severity": "WARN",
+      "cik": 731766,
+      "ticker": "UNH",
+      "name": "UNITEDHEALTH GROUP INC",
+      "snap_a_value": "293.19000244140625",
+      "snap_b_value": "401.7300109863281",
+      "evidence": "price move of 37.02% between snapshots, no split recorded \u2014 investigate"
+    },
+    {
+      "category": "value_drift",
+      "severity": "WARN",
+      "cik": 858877,
+      "ticker": "CSCO",
+      "name": "CISCO SYSTEMS, INC.",
+      "snap_a_value": "76.8499984741211",
+      "snap_b_value": "111.68000030517578",
+      "evidence": "price move of 45.32% between snapshots, no split recorded \u2014 investigate"
+    },
+    {
+      "category": "value_drift",
+      "severity": "WARN",
+      "cik": 937966,
+      "ticker": "ASML",
+      "name": "ASML HOLDING NV",
+      "snap_a_value": "1406.6099853515625",
+      "snap_b_value": "1844.0799560546875",
+      "evidence": "price move of 31.1% between snapshots, no split recorded \u2014 investigate"
+    },
+    {
+      "category": "value_drift",
+      "severity": "WARN",
+      "cik": 947263,
+      "ticker": "TD",
+      "name": "TORONTO DOMINION BANK",
+      "snap_a_value": "95.31999969482422",
+      "snap_b_value": "124.36000061035156",
+      "evidence": "price move of 30.47% between snapshots, no split recorded \u2014 investigate"
+    },
+    {
+      "category": "value_drift",
+      "severity": "WARN",
+      "cik": 1018724,
+      "ticker": "AMZN",
+      "name": "AMAZON COM INC",
+      "snap_a_value": "198.7899932861328",
+      "snap_b_value": "262.6499938964844",
+      "evidence": "price move of 32.12% between snapshots, no split recorded \u2014 investigate"
+    },
+    {
+      "category": "value_drift",
+      "severity": "WARN",
+      "cik": 1137789,
+      "ticker": "STX",
+      "name": "Seagate Technology Holdings plc",
+      "snap_a_value": "425.989990234375",
+      "snap_b_value": "973.4400024414062",
+      "evidence": "price move of 128.51% between snapshots, no split recorded \u2014 investigate"
+    },
+    {
+      "category": "value_drift",
+      "severity": "WARN",
+      "cik": 1321655,
+      "ticker": "PLTR",
+      "name": "Palantir Technologies Inc.",
+      "snap_a_value": "131.41000366210938",
+      "snap_b_value": "174.0399932861328",
+      "evidence": "price move of 32.44% between snapshots, no split recorded \u2014 investigate"
+    },
+    {
+      "category": "value_drift",
+      "severity": "WARN",
+      "cik": 1327567,
+      "ticker": "PANW",
+      "name": "Palo Alto Networks Inc",
+      "snap_a_value": "166.9499969482422",
+      "snap_b_value": "384.2699890136719",
+      "evidence": "price move of 130.17% between snapshots, no split recorded \u2014 investigate"
+    },
+    {
+      "category": "value_drift",
+      "severity": "WARN",
+      "cik": 1535527,
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "snap_a_value": "107.41000366210938",
+      "snap_b_value": "216.9499969482422",
+      "evidence": "price move of 101.98% between snapshots, no split recorded \u2014 investigate"
+    },
+    {
+      "category": "value_drift",
+      "severity": "WARN",
+      "cik": 1571996,
+      "ticker": "DELL",
+      "name": "Dell Technologies Inc.",
+      "snap_a_value": "117.48999786376953",
+      "snap_b_value": "490.80999755859375",
+      "evidence": "price move of 317.75% between snapshots, no split recorded \u2014 investigate"
+    },
+    {
+      "category": "value_drift",
+      "severity": "WARN",
+      "cik": 1594805,
+      "ticker": "SHOP",
+      "name": "SHOPIFY INC.",
+      "snap_a_value": "112.69999694824219",
+      "snap_b_value": "154.32000732421875",
+      "evidence": "price move of 36.93% between snapshots, no split recorded \u2014 investigate"
+    },
+    {
+      "category": "value_drift",
+      "severity": "WARN",
+      "cik": 1596532,
+      "ticker": "ANET",
+      "name": "Arista Networks, Inc.",
+      "snap_a_value": "141.58999633789062",
+      "snap_b_value": "198.82000732421875",
+      "evidence": "price move of 40.42% between snapshots, no split recorded \u2014 investigate"
+    },
+    {
+      "category": "value_drift",
+      "severity": "WARN",
+      "cik": 1835632,
+      "ticker": "MRVL",
+      "name": "Marvell Technology, Inc.",
+      "snap_a_value": "78.61000061035156",
+      "snap_b_value": "222.02000427246094",
+      "evidence": "price move of 182.43% between snapshots, no split recorded \u2014 investigate"
+    },
+    {
+      "category": "value_drift",
+      "severity": "WARN",
+      "cik": 1973239,
+      "ticker": "ARM",
+      "name": "ARM HOLDINGS PLC /UK",
+      "snap_a_value": "125.27999877929688",
+      "snap_b_value": "279.44000244140625",
+      "evidence": "price move of 123.05% between snapshots, no split recorded \u2014 investigate"
+    },
+    {
+      "category": "value_drift",
+      "severity": "WARN",
+      "cik": 1996810,
+      "ticker": "GEV",
+      "name": "GE Vernova Inc.",
+      "snap_a_value": "802.1300048828125",
+      "snap_b_value": "1063.25",
+      "evidence": "price move of 32.55% between snapshots, no split recorded \u2014 investigate"
+    },
+    {
+      "category": "value_drift",
+      "severity": "WARN",
+      "cik": 2023554,
+      "ticker": "SNDK",
+      "name": "Sandisk Corp",
+      "snap_a_value": "626.5599975585938",
+      "snap_b_value": "1641.1099853515625",
+      "evidence": "price move of 161.92% between snapshots, no split recorded \u2014 investigate"
+    },
+    {
+      "category": "value_drift",
+      "severity": "WARN",
+      "cik": 2053383,
+      "ticker": "KXIAY",
+      "name": "Kioxia Holdings Corporation/ADR",
+      "snap_a_value": "15.390000343322754",
+      "snap_b_value": "34.15999984741211",
+      "evidence": "price move of 121.96% between snapshots, no split recorded \u2014 investigate"
+    }
+  ]
+}
